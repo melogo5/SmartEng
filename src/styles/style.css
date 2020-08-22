@@ -12,6 +12,8 @@ nav a{
 }
 .learnButtons a{
     margin-right: 20px;
+    border-radius: 15px;
+    padding: 5px 10px;
 }
 a{
     color: white;
@@ -49,6 +51,7 @@ a{
     margin-top: 40px;
     background-color: rgb(52, 152, 219);
     width: 20%;
+    height: 420px;
     display: inline-block;
     border-radius: 20px;
     vertical-align: top;
@@ -62,11 +65,16 @@ a{
     text-align: center;
 }
 .cards a{
+    width: 60%;
+    vertical-align: bottom;
     display: inline-block;
     background-color: skyblue;
     padding: 10px 20px;
     border-radius: 15px;
     margin-bottom: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 12%;
 }
 .cards div:nth-child(-n + 2){
     margin-right: 10%;
@@ -101,4 +109,9 @@ body{
 a:hover{
     background-color: rgba(255, 255, 0, 0.925);
     color: rgba(43, 43, 141, 0.897);
+}
+.cards div{
+    position: relative;
+    padding-bottom: 20px;
+    text-align: center;
 }
