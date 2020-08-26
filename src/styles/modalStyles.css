@@ -15,11 +15,12 @@
 	vertical-align: middle;
   }
   
+
   .modal-container {
-	width: 300px;
+	width: 500px;
+	height:400px;
 	margin: 0px auto;
-	padding: 20px 30px;
-	background-color: #fff;
+	background-color: rgba(71, 146, 215, 0.7);
 	border-radius: 2px;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
 	transition: all 0.3s ease;
@@ -28,15 +29,34 @@
   
   .modal-header h3 {
 	margin-top: 0;
-	color: #42b983;
+	font-size: 32px;
+	text-align: center;
+	padding: 5px;
+	color: rgba(255, 255, 0, 1);
   }
   
   .modal-body {
 	margin: 20px 0;
+	text-align: center;
   }
   
   .modal-default-button {
 	float: right;
+	padding-right: 7px ;
+	padding-left: 7px;
+	cursor: pointer;
+  }
+  .popupCard {
+	  width: 110px;
+	  color: #215E9A;
+	  font-size: 32px;
+	  padding: 30px 30px;
+	  display: inline-block;
+	  background-color: rgba(255, 255, 0, 1);
+	  margin-right:30px;
+	  margin-left: 30px;
+	  margin-bottom: 50px;
+	  border-radius: 10px;
   }
   
   /*
