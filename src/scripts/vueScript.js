@@ -7,6 +7,8 @@ Vue.component("modal", {
 new Vue({
 	el: "#app",
 	data: {
-		showModal: false
+		showModal: false, 
+		showSignin:false,
+		showSignup: false
 	}
 });

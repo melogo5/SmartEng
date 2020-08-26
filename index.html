@@ -55,6 +55,17 @@
             <a href="rus-eng.html" slot="body"class="popupCard">rus-eng</a>
             <a href="eng-rus.html" slot="body" class="popupCard">eng-rus</a>
         </modal>
+        <modal v-if="showSignin" @close="showSignin = false">
+         <input size="40" slot="body" >
+         <input size="40" slot="body" >
+         <a href="#" slot="body">sign in</a>
+      </modal>
+      <modal v-if="showSignup" @close="showSignup = false">
+        <input size="40" slot="body">
+        <input size="40" slot="body" >
+        <input size="40" slot="body" >
+        <a href="#" slot="body">sign up</a>
+    </modal>
         <header>
             <nav class="shadow">
                 <div class="learnButtons">
@@ -63,8 +74,8 @@
                     <a href="methods.html">methods</a>
                 </div>
                 <div class="loginButtons">
-                    <a href="#" class="shadow">sign in</a>
-                    <a href="#" class="shadow">sign up</a>
+                    <a href="#" id="show-modal" @click="showSignin = true" class="shadow">sign in</a>
+                    <a href="#" id="show-modal" @click="showSignup = true" class="shadow">sign up</a>
                 </div>
             </nav>
         </header>
